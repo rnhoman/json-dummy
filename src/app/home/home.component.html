@@ -1,0 +1,69 @@
+<style>
+  th{
+    text-align: center;
+  }
+</style>
+
+<div class="container-fluit">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#" class="navbar-brand">Angular</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Add </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Login</a>
+        </li>
+      </ul>
+    </div> -->
+  </nav>
+
+  <!-- <div class="container">
+    <section class="row justify-content-md-center" style="padding: 20px;">
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Company</th>
+              <th>Company Alias</th>
+              <th>Address</th>
+              <th colspan="2" style="width: 5%;">Action</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let item of client; let i = index;">
+            <tr>
+              <td>{{ i+1 }}</td>
+              <td>{{ item.company }}</td>
+              <td>{{ item.clientAlias}}</td>
+              <td>{{ item.address }}</td>
+              <td>
+                <button type="button" class="btn btn-primary btn-sm"><span class="fas fa-pencil-alt"></span></button>
+              </td>
+              <td><button type="button" class="btn btn-danger btn-sm"><span class="fas fa-trash-alt"></span></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div> -->
+
+  <div class="container">
+    <ag-grid-angular 
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [pagination]="true"
+    
+    >
+</ag-grid-angular>
+  </div>
+</div>
